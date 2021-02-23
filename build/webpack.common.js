@@ -1,3 +1,4 @@
+// 构建 commonjs2 规范的包，会打包一个全量的包
 const path = require('path');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');

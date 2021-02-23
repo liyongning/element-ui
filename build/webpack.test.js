@@ -1,3 +1,4 @@
+// 这个文件没什么用，不过看命名，应该是想用于测试项目的 webpack 配置，不过现在用的 karma 框架
 const path = require('path');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');

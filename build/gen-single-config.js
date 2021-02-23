@@ -1,3 +1,7 @@
+/**
+ * 生成 webpack 基础配置骨架，但是没用 
+ */
+
 var path = require('path');
 var config = require('./config');
 

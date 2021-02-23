@@ -1,9 +1,11 @@
 'use strict';
+// 文件有问题
 
 const fs = require('fs');
 const path = require('path');
 const algoliasearch = require('algoliasearch');
 const slugify = require('transliteration').slugify;
+// 不存在
 const key = require('./algolia-key');
 
 const client = algoliasearch('4C63BTGP6S', key);

@@ -1,4 +1,7 @@
 #!/usr/bin/env sh
+
+# 这里主要是和远程的 dev 分支做 diff 然后合并
+
 git checkout dev
 
 if test -n "$(git status --porcelain)"; then

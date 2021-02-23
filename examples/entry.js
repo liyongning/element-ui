@@ -1,9 +1,13 @@
+// 官网项目的入口，就是一个普通的 vue 项目
 import Vue from 'vue';
 import entry from './app';
 import VueRouter from 'vue-router';
+// 引入组件库，main 是别名，在 /build/config.js 中有配置
 import Element from 'main/index.js';
 import hljs from 'highlight.js';
+// 路由配置
 import routes from './route.config';
+// 官网项目的一些组件
 import demoBlock from './components/demo-block';
 import MainFooter from './components/footer';
 import MainHeader from './components/header';
@@ -11,10 +15,12 @@ import SideNav from './components/side-nav';
 import FooterNav from './components/footer-nav';
 import title from './i18n/title';
 
+// 组件库样式
 import 'packages/theme-chalk/src/index.scss';
 import './demo-styles/index.scss';
 import './assets/styles/common.css';
 import './assets/styles/fonts/style.css';
+// 将 icon 信息挂载到 Vue 原型链上，在 markdown 文档中被使用，在官网的 icon 图标 页面展示出所有的 icon 图标
 import icon from './icon.json';
 
 Vue.use(Element);

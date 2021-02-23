@@ -1,3 +1,7 @@
+/**
+ * 主题编辑器的 chorme 插件项目的 webpack 配置
+ * 项目在 extension 目录下
+ */
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const demoConfig = require('./webpack.demo');

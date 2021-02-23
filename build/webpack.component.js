@@ -1,3 +1,4 @@
+// 构建 commonjs2 规范的包，包支持按需加载
 const path = require('path');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
@@ -7,6 +8,7 @@ const config = require('./config');
 
 const webpackConfig = {
   mode: 'production',
+  // 这个配置是按需加载的重点，一个组件会输出一个包
   entry: Components,
   output: {
     path: path.resolve(process.cwd(), './lib'),

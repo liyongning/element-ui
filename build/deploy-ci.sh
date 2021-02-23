@@ -1,4 +1,9 @@
 #! /bin/sh
+
+# 和 travis ci 结合使用的持续集成脚本
+# 这个脚本在 .travis.yml 文件中被执行，代码被提交到 github 仓库以后会自动被 Tavis CI 执行
+# ci 会自动找项目中的 .travis.yml 文件，并执行里面的命令
+
 mkdir temp_web
 git config --global user.name "element-bot"
 git config --global user.email "wallement@gmail.com"

@@ -1,3 +1,7 @@
+/**
+ * 根据 package.json 自动生成 /examples/version.json，用于记录组件库的版本信息
+ * 这些版本信息在官网组件页面的头部导航栏会用到
+ */
 var fs = require('fs');
 var path = require('path');
 var version = process.env.VERSION || require('../../package.json').version;

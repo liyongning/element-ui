@@ -1,3 +1,4 @@
+// 构建 umd 规范的包，全量包
 const path = require('path');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
